@@ -1,0 +1,17 @@
+<%= form_with(model: postsn__skip, local: true) do |form| %>
+  <% if postsn__skip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(postsn__skip.errors.count, "error") %> prohibited this postsn__skip from being saved:</h2>
+
+      <ul>
+      <% postsn__skip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

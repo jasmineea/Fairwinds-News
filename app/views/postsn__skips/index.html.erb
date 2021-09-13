@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Postsn  Skips</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @postsn__skips.each do |postsn__skip| %>
+      <tr>
+        <td><%= link_to 'Show', postsn__skip %></td>
+        <td><%= link_to 'Edit', edit_postsn__skip_path(postsn__skip) %></td>
+        <td><%= link_to 'Destroy', postsn__skip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Postsn  Skip', new_postsn__skip_path %>
