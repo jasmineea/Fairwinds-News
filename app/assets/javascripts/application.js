@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require slick-slider
+//= require image_upload
+//= require main
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
